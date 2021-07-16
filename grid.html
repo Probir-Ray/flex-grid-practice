@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+  </head>
+
+  <style>
+    section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      padding: 2em;
+    }
+    div {
+      background-color: lightpink;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    @media screen and (max-width: 688px) {
+      section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media screen and (min-width: 689px) and (max-width: 992px) {
+      section {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+  </style>
+  <body>
+    <section>
+      <div>
+        <h3>Item-1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia vel
+          error molestiae. Praesentium laudantium, accusamus fuga facilis
+          consequuntur expedita.
+        </p>
+      </div>
+      <div>
+        <h3>Item-2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia vel
+          error molestiae. Praesentium laudantium, accusamus fuga facilis
+          consequuntur expedita.
+        </p>
+      </div>
+      <div>
+        <h3>Item-3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia vel
+          error molestiae. Praesentium laudantium, accusamus fuga facilis
+          consequuntur expedita.
+        </p>
+      </div>
+      <div>
+        <h3>Item-4</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia vel
+          error molestiae. Praesentium laudantium, accusamus fuga facilis
+          consequuntur expedita.
+        </p>
+      </div>
+      <div>
+        <h3>Item-5</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia vel
+          error molestiae. Praesentium laudantium, accusamus fuga facilis
+          consequuntur expedita.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
