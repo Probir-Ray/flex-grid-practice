@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex & Grid</title>
+    <style>
+      .rects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        flex-flow: row wrap; /* flex-flow: flex-direction flex-wrap */
+      }
+      .rect {
+        width: 250px;
+        height: 250px;
+        background-color: coral;
+        color: #fff;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+      #one {
+        /* order: 1; */
+        flex-grow: 1;
+      }
+      #two {
+        /* order: 2; */
+        flex-grow: 1;
+      }
+      #three {
+        /* order: 0; */
+        background-color: gold;
+        flex-grow: 10;
+      }
+      #four {
+        /* order: 4; */
+        flex-grow: 1;
+      }
+      #five {
+        flex-grow: 1;
+      }
+      #six {
+        flex-grow: 15;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="rect-area">
+      <div class="rects">
+        <div class="rect" id="one">
+          <h3>Rect No. 1</h3>
+        </div>
+        <div class="rect" id="two">
+          <h3>Rect No. 2</h3>
+        </div>
+        <div class="rect" id="three">
+          <h3>Rect No. 3</h3>
+        </div>
+        <div class="rect" id="four">
+          <h3>Rect No. 4</h3>
+        </div>
+        <div class="rect" id="five">
+          <h3>Rect No. 5</h3>
+        </div>
+        <div class="rect" id="six">
+          <h3>Rect No. 6</h3>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
